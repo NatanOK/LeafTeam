@@ -5,44 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="imagens/cropped-leaf.png" type="image/x-icon">
   <title>Leaf Steam</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="container">
-      <form class="search-bar">
-        <input type="search" id="search" placeholder="Pesquisar notícias de jogos">
-        <button type="submit">Pesquisar</button>
+<body class="font-sans bg-gray-100">
+  <header class="bg-green-400 border-b border-green-300 py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <form class="flex items-center">
+        <input type="search" id="search" placeholder="Pesquisar notícias de jogos" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+        <button type="submit" class="ml-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Pesquisar</button>
       </form>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Notícias</a></li>
-          <li><a href="#">Análises</a></li>
-          <li><a href="#">Previews</a></li>
-          <li><a href="#">Entrevistas</a></li>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-green-800 hover:text-green-900">Notícias</a></li>
+          <li><a href="#" class="text-green-800 hover:text-green-900">Análises</a></li>
+          <li><a href="#" class="text-green-800 hover:text-green-900">Previews</a></li>
+          <li><a href="#" class="text-green-800 hover:text-green-900">Entrevistas</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <main>
-    <section class="categorias">
-      <h2>Categorias</h2>
-      <ul>
-        <li><a href="#">Ação</a></li>
-        <li><a href="#">Aventura</a></li>
-        <li><a href="#">Estratégia</a></li>
-        <li><a href="#">Esportes</a></li>
+  <main class="container mx-auto my-8 px-4">
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Categorias</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <li><a href="#" class="block bg-white rounded-md shadow-md p-4 hover:bg-green-100 transition-colors">Ação</a></li>
+        <li><a href="#" class="block bg-white rounded-md shadow-md p-4 hover:bg-green-100 transition-colors">Aventura</a></li>
+        <li><a href="#" class="block bg-white rounded-md shadow-md p-4 hover:bg-green-100 transition-colors">Estratégia</a></li>
+        <li><a href="#" class="block bg-white rounded-md shadow-md p-4 hover:bg-green-100 transition-colors">Esportes</a></li>
       </ul>
     </section>
     
-    <section class="noticias">
-      <h2>Notícias de jogos</h2>
-      <ul>
-        <li>
-          <img src="imagem.jpg" alt="Imagem da notícia">
-          <div class="conteudo">
-            <h3>Título da notícia</h3>
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Notícias de jogos</h2>
+      <ul class="space-y-4">
+        <li class="bg-white rounded-md shadow-md p-4">
+          <img src="imagem.jpg" alt="Imagem da notícia" class="w-full rounded-t-md">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Título da notícia</h3>
             <p>Descrição da notícia</p>
           </div>
         </li>
