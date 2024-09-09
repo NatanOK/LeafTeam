@@ -2,60 +2,98 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  nav {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    display: inline-block;
+    background-color: #e9f5e9; /* Fundo suave */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d4edda; /* Verde clarinho */
+    border-bottom: 2px solid #b2dfdb; /* Borda inferior suave */
+}
+
+.search-bar {
     margin-right: 20px;
-  }
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  nav a:hover {
-    color: #ccc;
-  }
-  .categorias {
-    background-color: #f0f0f0;
-    padding: 1em;
-  }
-  .categorias ul {
+}
+
+.search-bar input[type="search"] {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="search"]:focus {
+    border-color: #4CAF50; /* Verde ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.search-bar button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  .categorias li {
-    display: inline-block;
+    display: flex;
+}
+
+.navbar li {
     margin-right: 20px;
-  }
-  .categorias a {
+}
+
+.navbar a {
     text-decoration: none;
-  }
-  .categorias a:hover {
-    color: #333;
-  }
-  .noticias {
+    color: #337ab7; /* Cor do texto */
+    transition: color 0.3s; /* Transição suave */
+}
+
+.navbar a:hover {
+    color: #4CAF50; /* Verde ao passar o mouse */
+}
+
+.noticias {
     padding: 1em;
-  }
-  .noticias ul {
+}
+
+.noticias ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  .noticias li {
+}
+
+.noticias li {
     margin-bottom: 20px;
-  }
-  .noticias h3 {
+    padding: 15px;
+    background-color: #ffffff; /* Fundo branco para as notícias */
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: box-shadow 0.3s; /* Transição suave */
+}
+
+.noticias li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.noticias h3 {
     margin-top: 0;
-  }
-  
+    color: #333; /* Cor do título */
+}
+
+.conteudo {
+    padding: 10px; /* Espaçamento interno para o conteúdo */
+}
